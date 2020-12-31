@@ -20,7 +20,7 @@ puts '5 Skills created'
 
 9.times do |portfolio_item|
   Portfolio.create!(
-    title: "Portfolio title: #{portfolio_item}",
+    title: "Unique Portfolio #{portfolio_item}",
     subtitle: 'My great service',
     body: 'Incrivel body',
     main_image: 'https://place-hold.it/600x200',
