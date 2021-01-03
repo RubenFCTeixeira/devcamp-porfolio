@@ -1,0 +1,10 @@
+<%= image_tag @portfolio.main_image %>
+
+<h1><%= @portfolio.title %> Portfolio</h1>
+<em><%= @portfolio.subtitle %></em>
+<p><%= @portfolio.body %></p>
+
+<h2>Technologies Used</h2>
+<% @portfolio.technologies.each do |technology| %>
+  <p><%= technology.name %></p>
+<% end %>
