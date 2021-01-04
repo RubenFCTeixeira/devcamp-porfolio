@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
+  layout 'blog' # tells to Rails application to load Blog Layout for this entire controller
 
   # GET /blogs
   # GET /blogs.json
