@@ -2,6 +2,7 @@ class PortfoliosController < ApplicationController
   before_action :set_portfolio, only: %i[edit update show destroy]
   def index
     @portfolio_items = Portfolio.all
+    @page_title = 'All Portfolios'
   end
 
   def new
@@ -33,7 +34,9 @@ class PortfoliosController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @page_title = @portfolio.title
+  end
 
   def destroy
     @portfolio.destroy
