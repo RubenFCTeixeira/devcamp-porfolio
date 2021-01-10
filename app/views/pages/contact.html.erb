@@ -1,2 +1,7 @@
 <h1>Pages#Contact</h1>
 <p>Find me in app/views/pages/Contact.html.erb</p>
+
+<p>Phone Number: <%= number_to_phone(860300400, delimiter: ' ', pattern: /(\d{3})(\d{3})(\d{3})$/) %></p>
+<p>Preçario: <%= number_to_currency(1502.32, locale: :pt) %></p>
+<p>Phone Number: <%= number_to_percentage(53.2, precision: 2) %></p>
+<p> Gigant number: <%= number_with_delimiter(100499288, delimiter: ' ', separator: ',') %></p>
