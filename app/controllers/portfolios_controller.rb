@@ -8,8 +8,8 @@ class PortfoliosController < ApplicationController
   end
 
   def new
-    @new_portfolio = Portfolio.new
-    3.times { @new_portfolio.technologies.build }
+    @portfolio = Portfolio.new
+    3.times { @portfolio.technologies.build }
   end
 
   def create
